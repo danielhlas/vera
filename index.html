@@ -1,0 +1,805 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <title>Welcome To Vera</title>
+  </head>
+  <body id="home">
+    
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"> 		
+	<div class="container my-3">    
+
+    <a class="navbar-brand" href="">
+      <img src="./images/logo.svg" height="33" alt="">
+    </a>
+    
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+			data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav text-end ms-auto"> 
+        <li class="nav-item">
+          <a class="home nav-link active" href="#home">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#solutions">Solutions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#details">Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#expertise">Expertise</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+      </ul>
+
+      <!-- Ikony sociálních sítí -->
+      <div class="d-none d-lg-inline text-end">
+      <span class="nav-item ms-2">
+        <span class="fa-stack">
+          <a href="#" target="_blank">
+            <i class="fas fa-circle fa-stack-2x"></i>  <!--kolečko pod ikonou-->
+            <i class="fab fa-facebook-f fa-stack-1x text-white"></i>  <!--samotná ikona-->
+          </a>
+        </span>
+      </span>
+      <span class="nav-item">
+        <span class="fa-stack">
+          <a href="#">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-twitter fa-stack-1x text-white"></i>
+          </a>
+        </span>
+      </span>
+    </div>
+    </div>
+
+	</div>
+</nav>
+
+
+<!-- Header -->
+<header class="header">
+  <img src="images/vertical-decoration-left.svg" class="vertical-decoration position-absolute" alt="">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 my-auto ms-2 mt-5">
+          <h1 class="display-2">Software Solutions For 
+            <span class="replace-me text-primary">Business, Startups, Enterprise</span>
+          </h1>
+          <p class="lead">Boost your business with cutting-edge software solutions tailored to the needs of modern enterprises.</p>
+          <a href="" class="btn  btn-primary rounded-pill text-white px-5">Learn More</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Partners  -->
+<section class="mt-5">
+  <div class="container ">
+    <p class="text-center">OUR PARTNERS</p>
+    <div class="row d-flex justify-content-evenly g-3 text-center">
+      <div class="col-6 col-lg-2 col-md-4">
+        <img src="./images/partner-logo-1.png" alt="">
+      </div>
+      <div class="col-6 col-lg-2 col-md-4">
+        <img src="./images/partner-logo-2.png" alt="">
+      </div>
+      <div class="col-lg-2 col-md-4 d-none d-md-block">
+        <img src="./images/partner-logo-3.png" alt="">
+      </div>
+      <div class="col-lg-2 col-md-4 d-none d-lg-block">
+        <img src="./images/partner-logo-4.png" alt="">
+      </div>
+      <div class="col-lg-2 col-md-4 d-none d-xl-block">
+        <img src="./images/partner-logo-5.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Info + Form section  -->
+<div class="container my-7">
+  <div class="row">
+    <div class="col-md-6 ps-4">
+      <h3 class="fw-bold">Get More Information</h3>
+        <hr class="border-primary my-4">
+        <p class="lead">We provide innovative software solutions that empower businesses to thrive in the digital era.</p>
+      <ul class="list-unstyled">
+        <li class="d-flex gap-3">
+          <i class="fa-solid fa-check text-primary mt-1"></i>
+          <p><b>Customized Solutions:</b> Our solutions are designed to meet your specific business needs, ensuring maximum efficiency and productivity.</p>
+        </li>
+        <li class="d-flex gap-3">
+          <i class="fa-solid fa-check text-primary  mt-1"></i>
+          <p><b>Seamless Integration:</b> We seamlessly integrate our software with your existing systems, minimizing disruptions and optimizing workflows.</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- form -->
+    <div class="col-md-6 px-5">
+      <form>
+        <input type="text" class="form-control border-secondary rounded-0 bg-secondary py-3 ps-3 mb-4" placeholder="Enter name">
+        <input type="email" class="form-control border-secondary rounded-0 bg-secondary py-3 ps-3 mb-4" placeholder="Enter e-mail">
+        <input type="text" class="form-control border-secondary rounded-0 bg-secondary py-3 ps-3 mb-4" placeholder="Enter phone">
+        <select class="form-select border-secondary bg-secondary py-3 ps-3 mb-4">
+          <option value="default">Interested in...</option>
+          <option value="ERP">ERP Solution</option>
+          <option value="CRM">CRM Solution</option>
+          <option value="CMS">CMS Solution</option>
+          <option value="SFA">SFA Solution</option>
+        </select>
+
+        <div class="form-check">
+          <input class="form-check-input bg-white rounded-0" type="checkbox" value="">
+           <label class="form-check-label my-1" for="flexCheckDefault">
+             I agree to the <a href="./privacy.html" class="text-primary">Privacy Policy</a>
+           </label>
+        </div>
+
+        <div class="d-grid">
+          <input type="button" value="Submit" class="btn btn-primary text-white rounded-pill mt-3">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Solutions -->
+<section id="solutions" class="solutions my-5 mx-auto">
+  <div class="container text-center">
+    <h6 class="fw-bold text-orange-bg mx-auto mb-3">SOLUTIONS</h6>
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2 class="fw-bold">Vera Provides Software Solutions For Business Acceleration</h2>
+      </div>
+    </div>
+
+    <div class="row text-start mt-4">
+      <div class="col-sm-6 mt-3">
+        <div class="card border-0 h-100">
+          <img src="./images/solution-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body bg-secondary">
+            <h5 class="card-title fw-bold">ERP Software Solutions</h5>
+            <p class="card-text lh-lg">Our ERP software solution streamlines your business processes and enhances operational efficiency. With integrated modules for finance, human resources, and more, you can make data-driven decisions.</p>
+            <span class="badge rounded-2 bg-primary p-2">MANAGEMENT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 mt-3">
+        <div class="card border-0 h-100">
+          <img src="./images/solution-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body bg-secondary">
+            <h5 class="card-title fw-bold">CRM Software Solutions</h5>
+            <p class="card-text lh-lg">Our CRM software solution helps you build stronger customer relationships and drive sales growth. Manage leads, track interactions, and deliver personalized experiences to maximize customer satisfaction and loyalty.</p>
+            <span class="badge rounded-2 bg-dark p-2 ">MARKETING</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 mt-3">
+        <div class="card border-0 h-100">
+          <img src="./images/solution-3.jpg" class="card-img-top" alt="...">
+          <div class="card-body bg-secondary">
+            <h5 class="card-title fw-bold">SFA Software Solutions</h5>
+            <p class="card-text lh-lg">Our SFA software solution empowers your sales team with the tools they need to drive revenue growth. Streamline sales processes, track performance, and enhance collaboration to close deals faster.</p>
+            <span class="badge rounded-2 bg-primary p-2">MANAGEMENT</span>
+          </div>
+        </div>
+      </div>
+        
+      <div class="col-sm-6 mt-3">
+        <div class="card border-0 h-100">
+          <img src="./images/solution-4.jpg" class="card-img-top" alt="...">
+          <div class="card-body bg-secondary">
+            <h5 class="card-title fw-bold">WMS Software Solutions</h5>
+            <p class="card-text lh-lg">Our WMS software solution optimizes your warehouse operations and improves inventory management. Gain real-time visibility, automate processes, and reduce costs to ensure efficient logistics.</p>
+            <span class="badge rounded-2 bg-dark p-2 ">MARKETING</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Detail section -->
+<section id="details" class="details py-5 position-relative">
+
+  <!-- Detail 1 (img-on-right) -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="fw-bold">Evaluation & Deployment</h2>
+        <hr class="border-primary">
+        <p class="lh-lg">We offer comprehensive evaluation and deployment services to ensure a smooth and successful implementation of our software solutions.</p>
+        
+        <ul class="list-unstyled lh-lg">
+          <li class="d-flex">
+            <i class="fa-solid fa-check text-primary pe-2 pt-2"></i>
+            <p><b>Customized solutions</b>: We tailor our solutions to align with your unique business needs</p>
+          </li>
+          <li class="d-flex">
+            <i class="fa-solid fa-check text-primary pe-2 pt-2"></i>
+            <p><b>Seamless Integration</b>: Our team ensures smooth integration of the software into your existing infrastructure, minimizing disruptions</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <img src="./images/details-1.jpg" class="img-fluid rounded-2" alt="">
+      </div>
+    </div>
+  </div>
+  <img src="images/vertical-decoration-left.svg" class="vertical-decoration position-absolute d-none d-md-block">
+</section>
+
+ <!-- Detail 2 (img-on-left) -->
+  <section class="details-2 position-relative">
+  <div class="container my-4">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="./images/details-2.jpg" class="img-fluid rounded-2" alt="">
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="fw-bold">Maintenance & Support</h2>
+        <hr class="border-primary">
+        <p class="lh-lg">We provide comprehensive maintenance and support services to ensure the smooth and uninterrupted operation of your software solutions. <a href="">Learn more about our support services.</a></p>
+        
+        <ul class="list-unstyled lh-lg">
+          <li class="d-flex">
+            <i class="fa-solid fa-check text-primary pe-2 pt-2"></i>
+            <p><b>Proactive Maintenance</b>: We proactively monitor and maintain your software solutions to prevent issues and optimize performance.</p>
+          </li>
+          <li class="d-flex">
+            <i class="fa-solid fa-check text-primary pe-2 pt-2"></i>
+            <p><b>Timely Updates</b>: We ensure your software is up to date with the latest features, security patches, and enhancements.</p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <img src="images/vertical-decoration-right.svg" class="vertical-decoration position-absolute d-none d-md-block">
+</section>
+
+
+
+<!-- Expertise -->
+<section id="expertise" class="bg-secondary py-5">
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-6 offset-md-3 mb-2">
+      <div class="badge bg-primary rounded-0 fw-bold fs-6 px-2 py-1">EXPERTISE</div>
+      <h2 class="fw-bold my-3">Expertise Strong Points</h2>
+      <p class="fw-base">We take pride in our expertise. With years of experience and a dedicated team, we deliver exceptional software solutions tailored to your needs. Our strong points include:</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row text-center my-3">
+    <div class="col-md-3 col-sm-6 my-3">
+      <i class="fa-solid fa-users text-primary fa-4x pb-3"></i>
+      <h4>Flexible Services</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="col-md-3 col-sm-6 my-3">
+      <i class="fa-solid fa-pen-nib text-primary fa-4x pb-3"></i>
+      <h4>Great Design</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="col-md-3 col-sm-6 my-3">
+      <i class="fa-solid fa-mug-saucer text-primary fa-5x pb-3"></i>
+      <h4>Easy To Use</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="col-md-3 col-sm-6 my-3">
+      <i class="fa-solid fa-diagram-project text-primary fa-4x pb-3"></i>
+      <h4>Smart Options</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="col-md-3 col-sm-6 my-3">
+      <i class="fa-solid fa-gear text-primary fa-4x pb-3"></i>
+      <h4>Advanced Tech</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="col-md-3 col-sm-6 my-3">
+      <i class="fa-solid fa-brain text-primary fa-4x pb-3"></i>
+      <h4>Good Expertise</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="col-md-3 col-sm-6 my-3">
+      <i class="fa-solid fa-bars-staggered text-primary fa-4x pb-3"></i>
+      <h4>Detailed Reports</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="col-md-3 col-sm-6 my-3">
+      <i class="fa-solid fa-cloud text-primary fa-4x pb-3"></i>
+      <h4>Cloud Storage</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+ 
+  </div>
+</div>
+
+</section>
+</div>
+
+
+<!-- Video section -->
+<section class="py-5">
+  <div class="container">
+
+    <!-- Video náhled (img + button) -->
+    <div class="row">
+      <div class="col-12 d-flex flex-column align-items-center">
+
+        <div class="position-relative"> <!-- relative, ptž věci uvnitř chceme dávat absolute -->
+          <img src="images/video-preview.jpg" alt="" class="img-fluid">  <!-- Vytvoří obrázek webu, který vidíme před klikem -->
+          <a class="my-class-video-btn" data-bs-toggle="modal" data-bs-target="#videoModal" 
+          data-bs-src="https://www.youtube.com/embed/u72H_zZzkcw"> <!-- button nepotřebuje href, protože pouze otevře modal-->
+          
+          <!-- Play Button (není to obrázek ani ikona)-->
+          <span class="video-play-button">
+            <span></span> <!-- Tohle slouží pro animaci -->
+          </span>
+        </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="video-modal">
+      <div id="videoModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="ratio ratio-16x9">
+              <iframe frameborder="0" class="embed-responsive-item" id="video"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- 3 sloupce textu pod videem  -->
+    <div class="row mt-4 video-sloupce">
+      <div class="col-md-10 offset-md-1">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4 mt-3">
+            <h4 class="fw-bold mb-3">10 Years Of Experience</h4>
+            <p>With over 10 years of experience, we have gained valuable insights and expertise to deliver high-quality software solutions.</p>
+          </div>
+    
+          <div class="col-md-4 mt-3">
+            <h4 class="fw-bold mb-3">Enduring Partnerships</h4>
+            <p>We believe in building enduring partnerships with our clients. We establish long-term relationships based on trust.</p>
+          </div>
+    
+          <div class="col-md-4 mt-3">
+            <h4 class="fw-bold mb-3">Skilled Capable Team</h4>
+            <p>Our team consists of skilled and capable professionals who are passionate about delivering excellence.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- PRICING -->
+<section class="mt-4 text-center" id="pricing">
+  <div class="row">
+    <h5><span class="badge bg-primary rounded-0">PRICING</span> </h5>
+    <h2 class="mt-2 fw-bold">Flexible Pricing Options</h2>
+  </div>
+
+  <div class="container my-4">
+    <div class="row justify-content-center gap-4 mx-lg-3" >
+
+      <div class="col-md-3 bg-secondary d-flex flex-column justify-content-evenly">
+        <h1 class="display-3 fw-bold mt-5">$99</h1>
+        <h4 class="text-primary fw-bold mt-2">STANDARD</h4>
+        <p class="lh-lg p-3 mt-3">Our standard pricing plan offers a comprehensive set of features for your software needs</p>
+      
+        <ul class="list-unstyled my-5">
+          <li><h5 class="fw-bold mt-3">SUBSCRIBERS LIST</h5></li>
+          <li><h5 class="fw-bold mt-3">USER ADMIN</h5></li>
+          <li><h5 class="fw-bold mt-3">CONTROL</h5></li>
+        </ul>
+        <div>
+          <button class="btn btn-primary rounded-pill text-white fw-bold mt-4 mb-4">Inquire</button>
+        </div>
+      </div>
+
+      <div class="col-md-3 bg-secondary d-flex flex-column justify-content-evenly">
+        <h1 class="display-3 fw-bold mt-5">$199</h1>
+        <h4 class="text-primary fw-bold mt-2">ADVANCED</h4>
+        <p class="lh-lg p-3 mt-3">Unlock additional enhanced capabilities. Take your software solutions to the next level</p>
+      
+        <ul class="list-unstyled my-5">
+          <li><h5 class="fw-bold mt-3">LIMITED STORAGE</h5></li>
+          <li><h5 class="fw-bold mt-3">FREE SPACE</h5></li>
+          <li><h5 class="fw-bold mt-3">CLOUD STORAGE</h5></li>
+        </ul>
+      
+        <div>
+          <button class="btn btn-primary rounded-pill text-white fw-bold mt-4 mb-4">Inquire</button>
+        </div>
+      </div>
+
+      <div class="col-md-3 bg-secondary d-flex flex-column justify-content-evenly">
+        <h1 class="display-3 fw-bold mt-5">$299</h1>
+        <h4 class="text-primary fw-bold mt-2">COMPLETE</h4>
+        <p class="lh-lg p-3 mt-3">Our complete pricing plan offers an all-inclusive package with advanced features</p>
+      
+        <ul class="list-unstyled my-5">
+          <li><h5 class="fw-bold mt-3">DEPLOYMENT PROTOCOL</h5></li>
+          <li><h5 class="fw-bold mt-3">USER ADMIN</h5></li>
+          <li><h5 class="fw-bold mt-3">PREMIUM SUPPORT PACK</h5></li>
+        </ul>
+      
+        <div>
+          <button class="btn btn-primary rounded-pill text-white fw-bold mt-4 mb-4">Inquire</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Projects -->
+<section id="projects" class="my-7">
+  <div class="container text-center">
+    <h5><span class="badge bg-primary rounded-0">PROJECTS</span></h5>
+    <h3 class="fw-bold my-3">Project's We Are Proud Of</h3>
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <p>We take pride in our successful projects and the value they bring to our clients. With our expertise and dedication, we have delivered exceptional results. Here are some highlights</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-1">
+    <div class="row">
+
+      <div class="col-md-4 col-sm-6 mt-4">
+        <div class="card bg-secondary" data-bs-toggle="modal" data-bs-target="#modal-project-1">
+          <img src="./images/project-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="card-text">
+              <strong>Orkla Foods</strong> - Donec bibeum mollis liga sit amet pulvinar sed viverra noris
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 col-sm-6 mt-4">
+        <div class="card bg-secondary" data-bs-toggle="modal" data-bs-target="#modal-project-2">
+          <img src="./images/project-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="card-text">
+              <strong>First Bank</strong> - Donec bibeum mollis liga sit amet pulvinar sed viverra noris
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 col-sm-6 mt-4">
+        <div class="card bg-secondary" data-bs-toggle="modal" data-bs-target="#modal-project-3">
+          <img src="./images/project-3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="card-text">
+              <strong>All Sweets</strong> - Donec bibeum mollis liga sit amet pulvinar sed viverra noris
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 mt-4">
+        <div class="card bg-secondary" data-bs-toggle="modal" data-bs-target="#modal-project-4">
+          <img src="./images/project-4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="card-text">
+              <strong>Fast Courier</strong> - Donec bibeum mollis liga sit amet pulvinar sed viverra noris
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 col-sm-6 mt-4">
+        <div class="card bg-secondary" data-bs-toggle="modal" data-bs-target="#modal-project-5">
+          <img src="./images/project-5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="card-text">
+              <strong>Lyra Market</strong> - Donec bibeum mollis liga sit amet pulvinar sed viverra noris
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 col-sm-6 mt-4">
+        <div class="card bg-secondary" data-bs-toggle="modal" data-bs-target="#modal-project-6">
+          <img src="./images/project-6.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="card-text">
+             <strong>Monday Stores</strong> - Donec bibeum mollis liga sit amet pulvinar sed viverra
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--  PROJECTS MODALS -->
+    <!-- 1 -->
+    <div class="modal fade" id="modal-project-1">
+      <div class="modal-dialog px-5" > 
+        <div class="modal-content bg-secondary">
+
+          <div class="modal-body">
+            <div class="row my-3">
+              <div class="col-md-6">
+                <img src="./images/project-1.jpg" alt="" class="img-fluid">
+              </div>
+
+              <div class="col-md-6 ">
+                <div class="d-flex flex-column justify-content-center h-100 p-4">
+                  <h3 class="mb-3">Orkla Foods</h3>
+                  <p>Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo. Integer semper quam at rutrum interdum. Mauris eu diam ac urna laoreet mollis et. </p>
+                  <p>Praesent lacus tortor, facilisis non enim eu, luctus semper velit. Curabitur faucibus diam in lectus.</p>
+                    <div class="mt-3">
+                      <button class="btn btn-primary text-white rounded-pill px-4 me-1">Details</button>
+                      <button class="btn btn-light rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>    
+              
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="modal fade" id="modal-project-2">
+      <div class="modal-dialog px-5" > 
+        <div class="modal-content bg-secondary">
+
+          <div class="modal-body">
+            <div class="row my-3">
+              <div class="col-md-6">
+                <img src="./images/project-2.jpg" alt="" class="img-fluid">
+              </div>
+
+              <div class="col-md-6 ">
+                <div class="d-flex flex-column justify-content-center h-100 p-4">
+                  <h3 class="mb-3">First Bank</h3>
+                  <p>Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo. Integer semper quam at rutrum interdum. Mauris eu diam ac urna laoreet mollis et</p>
+                  <p>Praesent lacus tortor, facilisis non enim eu, luctus semper velit. Curabitur faucibus diam in lectus.</p>
+                    <div class="mt-3">
+                      <button class="btn btn-primary text-white rounded-pill px-4 me-1">Details</button>
+                      <button class="btn btn-light rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>    
+              
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- 3 -->
+    <div class="modal fade" id="modal-project-3">
+      <div class="modal-dialog px-5"> 
+        <div class="modal-content bg-secondary">
+
+          <div class="modal-body">
+            <div class="row my-3">
+              <div class="col-md-6">
+                <img src="./images/project-3.jpg" alt="" class="img-fluid">
+              </div>
+
+              <div class="col-md-6 ">
+                <div class="d-flex flex-column justify-content-center h-100 p-4">
+                  <h3 class="mb-3">All Sweets</h3>
+                  <p>Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo. Integer semper quam at rutrum interdum. Mauris eu diam ac urna laoreet mollis et</p>
+                  <p>Praesent lacus tortor, facilisis non enim eu, luctus semper velit. Curabitur faucibus diam in lectus.</p>
+                    <div class="mt-3">
+                      <button class="btn btn-primary text-white rounded-pill px-4 me-1">Details</button>
+                      <button class="btn btn-light rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>    
+              
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="modal fade" id="modal-project-4">
+      <div class="modal-dialog px-5"> 
+        <div class="modal-content bg-secondary">
+
+          <div class="modal-body">
+            <div class="row my-3">
+              <div class="col-md-6">
+                <img src="./images/project-4.jpg" alt="" class="img-fluid">
+              </div>
+
+              <div class="col-md-6">
+                <div class="d-flex flex-column justify-content-center h-100 p-4">
+                  <h3 class="mb-3">Fast Courier</h3>
+                  <p>Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo. Integer semper quam at rutrum interdum. Mauris eu diam ac urna laoreet mollis et</p>
+                  <p>Praesent lacus tortor, facilisis non enim eu, luctus semper velit. Curabitur faucibus diam in lectus.</p>
+                    <div class="mt-3">
+                      <button class="btn btn-primary text-white rounded-pill px-4 me-1">Details</button>
+                      <button class="btn btn-light rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>    
+              
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- 5 -->
+    <div class="modal fade" id="modal-project-5">
+      <div class="modal-dialog px-5"> 
+        <div class="modal-content bg-secondary">
+
+          <div class="modal-body">
+            <div class="row my-3">
+              <div class="col-md-6">
+                <img src="./images/project-5.jpg" alt="" class="img-fluid">
+              </div>
+
+              <div class="col-md-6 ">
+                <div class="d-flex flex-column justify-content-center h-100 p-4">
+                  <h3 class="mb-3">Lyra Market</h3>
+                  <p>Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo. Integer semper quam at rutrum interdum. Mauris eu diam ac urna laoreet mollis et</p>
+                  <p>Praesent lacus tortor, facilisis non enim eu, luctus semper velit. Curabitur faucibus diam in lectus.</p>
+                    <div class="mt-3">
+                      <button class="btn btn-primary text-white rounded-pill px-4 me-1">Details</button>
+                      <button class="btn btn-light rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>    
+              
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="modal fade" id="modal-project-6">
+      <div class="modal-dialog px-5"> 
+        <div class="modal-content bg-secondary">
+
+          <div class="modal-body">
+            <div class="row my-3">
+              <div class="col-md-6">
+                <img src="./images/project-6.jpg" alt="" class="img-fluid">
+              </div>
+
+              <div class="col-md-6 ">
+                <div class="d-flex flex-column justify-content-center h-100 p-4">
+                  <h3 class="mb-3">Monday Stores</h3>
+                  <p>Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo. Integer semper quam at rutrum interdum. Mauris eu diam ac urna laoreet mollis et</p>
+                  <p>Praesent lacus tortor, facilisis non enim eu, luctus semper velit. Curabitur faucibus diam in lectus.</p>
+                    <div class="mt-3">
+                      <button class="btn btn-primary text-white rounded-pill px-4 me-1">Details</button>
+                      <button class="btn btn-light rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>   
+                </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!--NEWSLETTER -->
+<section class=" text-center" id="newsletter">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Subscribe And Follow</h2>
+
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <p class="lh-lg">Stay updated with our latest news and announcements. Subscribe to our newsletter and follow us on social media for valuable insights and exciting updates.</p>
+        
+        <form action="" class="mx-4 my-5 mb-6">
+          <div class="input-group ">
+            <input type="email" class="form-control form-control-lg rounded-0 border-secondary fs-6" placeholder="Enter e-mail adress">
+            <button class="btn btn-primary text-white rounded-0 p-3 px-4">Submit</button>
+          </div>
+        </form>
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-secondary pt-5 pb-6">
+  <div class="container text-center text-md-start">
+    <div class="row">
+      <div class="col-md-4 pe-3 mt-4">
+        <p>About Vera</p>
+        <p>Vera is a dedicated software solutions company that aims to provide exceptional services to its clients. We are committed to delivering innovative and customized solutions that meet your specific business needs.</p>
+      </div>
+
+      <div class="col-md-4 mt-4">
+        <p>Links</p>
+        <ul class="list-unstyled">
+          <li>Important: <a href="">Terms & Conditions</a>, <a href="./privacy.html">Privacy Policy</a></li>
+          <li>Useful: <a href="#expertise">Expertise</a>, <a href="#pricing">Pricing</a>, <a href="#newsletter">Newsletter</a></li>
+          <li>Menu: <a href="#home">Home</a>, <a href="#details">Details</a>, <a href="#solutions">Solutions</a>, <a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mt-4">
+        <div class="d-flex gap-3 justify-content-center justify-content-md-start mb-4">
+          <i class="fa-brands fa-facebook fa-3x"></i>
+          <i class="fa-brands fa-twitter fa-3x"></i>
+          <i class="fa-brands fa-instagram fa-3x"></i>
+          <i class="fa-brands fa-pinterest fa-3x"></i>
+        </div>
+        <p>We would love to hear from you <a href="mailto:contact@site.com">contact@site.com</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/replaceme.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+.header {
+    background: 
+    linear-gradient(to bottom right, 
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.7)
+    ), 
+    url(../images/header-background.jpg) left center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    max-height: 1000px;
+}
+
+
+.navbar {
+    transition: all 0.5s ease-in-out;
+}
+               
+.navbar-sticky {
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.vertical-decoration {
+	top: 12%;
+	width: 24px;
+}
+
+.details .vertical-decoration {
+	top: 10%;
+    left: 0;
+	width: 24px;
+}
+
+.details-2 .vertical-decoration {
+	top: 0%;
+    right: 0;
+	width: 24px;
+}
+
+
+hr {
+    border: 2px solid;
+    width: 15%;
+    opacity: 100%;
+}
+
+.text-orange-bg {
+    background-color: #fe6b2a;
+    width: 110px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Video button */
+.video-play-button {
+    content: "";  /* content je povinný pokud použijeme before nebo after */
+    position: absolute;
+    z-index: 10;
+    top: 50%;    /* top:50% a left:50% zaměří střed, ale na tento střed umístí levý horní okraj elementu, ne jeho střed.*/
+    left: 50%;   /* Proto se musí dopsat ještě transform, který to na ose posune zpět*/
+    transform: translateX(-50%) translateY(-50%); 
+    
+    width: 32px;
+    height: 44px;
+    border-radius: 50%;
+    display: block;
+    box-sizing: content-box;   /* Tohle button vycentruje, protože ho padding dá stranou?*/
+    padding: 1.125rem 1.25rem 1.125rem 1.75rem;
+    cursor: pointer;
+  } 
+  
+  .video-play-button:before{
+    content: "";  
+    position: absolute;
+    z-index: 0;
+    top: 50%;    
+    left: 50%;  
+    transform: translateX(-50%) translateY(-50%); 
+    
+    width: 76px; /* rozměry zahrnují i animaci*/
+    height: 76px;
+    border-radius: 50%;
+    display: block;
+    /* box-sizing: content-box;   tohle nepotřebujeme. má to mít jen na regular elementu*/
+    /* padding: 1.125rem 1.25rem 1.125rem 1.75rem;   taky nepotřebujeme*/
+  
+    background: var(--bs-primary);   /* tohle je naopak navíc oproti regular kódu bez before. tohle vytvoří barevné kolečko */
+    cursor: pointer;
+    animation: pulse-border 1500ms ease-in-out infinite;
+  } 
+  
+  .video-play-button:after{
+    content: "";  
+    position: absolute;
+    z-index: 1;
+    top: 50%;    
+    left: 50%;  
+    transform: translateX(-50%) translateY(-50%); 
+    
+    width: 70px; 
+    height: 70px;
+    border-radius: 50%;
+    display: block;
+  
+    background: var(--bs-primary);  
+    cursor: pointer;
+    transition: all 200ms;  /* tohle je navíc a dělá animaci plynulou */
+  } 
+  
+  
+  .video-play-button span {
+    position: relative;
+    display: block;
+    z-index: 3; /*Je to nad :before i :after*/
+    top: 6px;
+    left: 4px;
+    width: 0;
+    height: 0;
+  
+    /* Nakreslení bílé ikony troúhleníku uvnitř oranžového kolečka: */
+    border-left: 26px solid white;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+  }
+  
+  @keyframes pulse-border {
+    0% {
+      /*Startovní pozice animace. klíčový je scale, kde hodnota 1 udává standardní pozici 100%*/
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);  
+      opacity: 1; /*Nemusí být, ale v tomto příkladu to vypadá lépe */
+    }
+  
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5); 
+      opacity: 0; 
+    }
+  
+  }
+  
+  .video-modal .modal-dialog { 
+    max-width: 1150px; /* tímto zvětšíme otevřené okno, které je jinak příliš malé */
+    margin-top: 20%; /* Tohle zřejmě posune modal okno s videem vůči prohlížeči*/
+  }
+
+
+// Pricing
+#pricing .btn{
+    padding: 0.7rem 2.2rem 0.7rem 2.2rem  !important;
+}
+
+//Modals projects
+#projects .modal-dialog {
+    max-width: 1040px !important; 
+    position: relative;
+    top: 25%;
+}
+
+
+@media(max-width: 768px) {
+    .header {
+        text-align: center !important;
+        padding: 50px 50px 0px 50px;
+        
+        background: 
+        linear-gradient(to bottom right, 
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+        ), 
+        url(../images/header-background.jpg) center center no-repeat;
+        background-size: cover;
+
+        p {font-size: 16px; }
+        h1 {font-size: 40px;}
+    }
+  
+    .vertical-decoration {display: none;}
+
+    .details-2 h2 {
+        margin-top: 20px;
+    }
+
+}
+
+@media(max-width: 992px){
+    .header {
+        text-align: center !important;
+        padding: 50px 50px 0px 50px;
+        
+        background: 
+        linear-gradient(to bottom right, 
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+        ), 
+        url(../images/header-background.jpg) center center no-repeat;
+        background-size: cover;
+
+
+        h1 {font-size: 45px;}
+        p {font-size: 20px; }
+    }
+
+    .vertical-decoration {display: none;}
+    .nav-link {margin-right: 5px;}
+    .home {margin-top: 8px;}
+}
+
+    
+
+
+  
+  
